@@ -36,19 +36,7 @@ Assert value equals "Juice".
 
 4. Blinkit – Keyboard Shortcut Scenario
 
-Enter "ButterMilk".
-Press Ctrl+A.
-Press Ctrl+X.
-Verify field empty.
-Press Ctrl+V.
-Verify text restored.
-Take screenshot.
-Assert value equals ButterMilk.
-Hit On Enter
-Add Slurrp Farm Banana Chocochip Pancake Mix to cart
-Add  Hershey's Hazelnut Syrup 
-validate that cart count was increased or not
-print the total cart price
+
 
 
 5. Saucedemo validation

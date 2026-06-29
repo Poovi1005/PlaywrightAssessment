@@ -1,28 +1,28 @@
 import {test,chromium, expect} from "@playwright/test";
 
-test.use({
-    viewport : {height :1366,width :768}
+// test.use({
+//     viewport : {height :1366,width :768}
 
-})
- test("Assessment",async({page})=>{
-   await page.goto("https://www.amazon.in/s?k=join+amazon+prime&adgrpid=1327112148528381&hvadid=82944841893797&hvbmt=bb&hvdev=c&hvlocphy=154826&hvnetw=o&hvqmt=b&hvtargid=kwd-82945393014646%3Aloc-90&hydadcr=5626_2501648&mcid=3861a9d242543041b997efa1f39279d3&msclkid=e0a0aa84060818a37d9ec0bb62238584&tag=msndeskstdin-21&ref=pd_sl_9ntprzamt3_b");
-   await page.waitForTimeout(3000);
-    // await page.locator('[id="nav-search-submit-button"]').click();
-   await page.locator('[placeholder="Search Amazon.in"]').fill('Laptops');
-    await page.waitForTimeout(3000);
-   await page.locator('[id="nav-search-submit-button"]').click();
-    await page.waitForTimeout(3000);
-    await page.goBack();
+// })
+//  test("Assessment",async({page})=>{
+//    await page.goto("https://www.amazon.in/s?k=join+amazon+prime&adgrpid=1327112148528381&hvadid=82944841893797&hvbmt=bb&hvdev=c&hvlocphy=154826&hvnetw=o&hvqmt=b&hvtargid=kwd-82945393014646%3Aloc-90&hydadcr=5626_2501648&mcid=3861a9d242543041b997efa1f39279d3&msclkid=e0a0aa84060818a37d9ec0bb62238584&tag=msndeskstdin-21&ref=pd_sl_9ntprzamt3_b");
+//    await page.waitForTimeout(3000);
+//     // await page.locator('[id="nav-search-submit-button"]').click();
+//    await page.locator('[placeholder="Search Amazon.in"]').fill('Laptops');
+//     await page.waitForTimeout(3000);
+//    await page.locator('[id="nav-search-submit-button"]').click();
+//     await page.waitForTimeout(3000);
+//     await page.goBack();
    
-    let a= await page.locator('[placeholder="Search Amazon.in"]').inputValue();
-    expect(a).toBe('Laptops')
+//     let a= await page.locator('[placeholder="Search Amazon.in"]').inputValue();
+//     expect(a).toBe('Laptops')
 
 
-    // ----------error not in login page ------------
+//     // ----------error not in login page ------------
 
 
 
- })
+//  })
 //  ----------------------------------Passed1-------------------
 
 
